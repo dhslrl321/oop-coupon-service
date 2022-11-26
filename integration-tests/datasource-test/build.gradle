@@ -1,0 +1,40 @@
+plugins {
+    id 'java-library'
+    id "io.freefair.lombok" version "6.0.0-m2"
+    id "org.springframework.boot" version "2.7.0"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation project(':domain')
+    implementation project(':infrastructure')
+    implementation project(':application')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    runtimeOnly 'com.h2database:h2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+bootJar.enabled = false;

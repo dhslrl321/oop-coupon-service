@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+    id "io.freefair.lombok" version "6.0.0-m2"
+    id "org.springframework.boot" version "2.7.0"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+}
+
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation 'org.valid4j:valid4j:0.5.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework:spring-tx:5.3.23'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootJar.enabled = false

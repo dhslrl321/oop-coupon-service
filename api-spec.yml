@@ -1,0 +1,268 @@
+openapi: 3.0.3
+info:
+  description: this is daangn-pay-coupon's oas
+  title: 당근 페이 쿠폰 - OpenAPI 3.0
+  version: 0.1.0
+servers:
+  - url: /
+tags:
+  - description: coupon
+    name: 당근 페이
+paths:
+  /api/users/{userId}/coupons:
+    get:
+      operationId: userCoupons
+      description: 사용자가 보유한 쿠폰 목록 조회 API
+      parameters:
+        - description: userId
+          in: path
+          name: userId
+          required: true
+          schema:
+            example: 1004
+            format: number
+            type: number
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CouponsApiModel'
+          description: 사용자가 보유한 쿠폰 목록 조회 성공
+      summary: 사용자가 보유한 쿠폰 목록 조회 API
+      tags:
+        - users
+    post:
+      description: 쿠폰을 발급합니다
+      operationId: assignCoupon
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssignCouponRequest'
+        description: Update an existent pet in the store
+        required: true
+
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssignCouponSuccessResponse'
+          description: 쿠폰 발행 성공
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssignCouponFailResponse'
+          description: 쿠폰 발행 실패
+      summary: 쿠폰 발급 API
+      tags:
+        - users
+  /api/users/{userId}/coupons/{couponId}:
+    patch:
+      operationId: usingCoupon
+      description: 사용자가 보유한 쿠폰 사용 API
+      parameters:
+        - description: userId
+          in: path
+          name: userId
+          required: true
+          schema:
+            example: 1004
+            format: number
+            type: number
+        - description: couponId
+          in: path
+          name: couponId
+          required: true
+          schema:
+            example: 81234
+            format: number
+            type: number
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UseCouponSuccessResponse'
+          description:  쿠폰 사용 성공
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UseCouponFailResponse'
+          description: 쿠폰 사용 실패
+      summary: 쿠폰 사용 API
+      tags:
+        - users
+  /api/coupons/{couponId}:
+    get:
+      operationId: getAssignedCouponDetail
+      description: 발급된 쿠폰 상세 조회
+      parameters:
+        - description: couponId
+          explode: false
+          in: path
+          name: couponId
+          required: true
+          schema:
+            example: 1234
+            format: number
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssignedCouponApiModel'
+          description: 발급된 쿠폰 조회 성공
+      summary: 쿠폰 ID로 쿠폰 정보 조회 API
+      tags:
+        - coupon
+  /api/coupons:
+    get:
+      operationId: getCoupons
+      description: 전체 쿠폰 발급 현황 조회
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CouponsDescribeApiModel'
+          description: 전체 쿠폰 발급 조회 성공
+      summary: 전체 쿠폰 발급 현황 조회 API
+      tags:
+        - coupon
+
+### 구성
+
+components:
+  schemas:
+    CouponApiModel:
+      properties:
+        couponId:
+          example: 203
+          type: number
+        code:
+          example: "C0001"
+          type: string
+        assignedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+        state:
+          example: "USED"
+          type: string
+        usedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+      type: object
+    CouponsApiModel:
+      properties:
+        coupons:
+          items:
+            $ref: '#/components/schemas/CouponApiModel'
+          minItems: 1
+          type: array
+      type: object
+
+    AssignedCouponApiModel:
+      properties:
+        userId:
+          example: 1004
+          type: number
+        couponId:
+          example: 203
+          type: number
+        code:
+          example: "C0001"
+          type: string
+        assignedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+        state:
+          example: "USED"
+          type: string
+        usedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+      type: object
+
+
+    CouponDescribeApiModel:
+      properties:
+        code:
+          example: "C0001"
+          type: string
+        name:
+          example: "의류 할인 쿠폰 5만원"
+          type: string
+        amount:
+          example: 50000
+          type: number
+        totalQuantity:
+          example: 100
+          type: number
+        leftQuantity:
+          example: 40
+          type: number
+      type: object
+
+    CouponsDescribeApiModel:
+      properties:
+        coupons:
+          items:
+            $ref: '#/components/schemas/CouponDescribeApiModel'
+          minItems: 1
+          type: array
+      type: object
+
+
+    AssignCouponRequest:
+      properties:
+        code:
+          example: "C0001"
+          type: string
+      required:
+        - code
+      type: object
+    AssignCouponSuccessResponse:
+      properties:
+        couponId:
+          example: 1
+          type: number
+        couponCode:
+          example: "C0001"
+          type: string
+        assignedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+      type: object
+
+
+    AssignCouponFailResponse:
+      properties:
+        reason:
+          example: "선착순 이벤트가 끝났습니다!"
+      type: object
+
+    UseCouponSuccessResponse:
+      properties:
+        couponId:
+          example: 123
+          type: number
+        code:
+          example: "C0001"
+          type: string
+        usedAt:
+          example: 2022-08-29T11:57:57.099389+09:00
+          format: date-time
+      required:
+        - userId
+        - couponCode
+      type: object
+
+
+    UseCouponFailResponse:
+      properties:
+        reason:
+          example: "사용할 수 있는 쿠폰이 존재하지 않습니다"

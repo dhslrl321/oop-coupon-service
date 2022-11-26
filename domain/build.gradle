@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.0.0-m2"
+}
+
+group = 'com.github.dhslrl321.coupon'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+dependencies {
+    implementation 'org.valid4j:valid4j:0.5.0'
+
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.6.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,11 @@
+rootProject.name = 'daangn-pay-2022-winter-internship'
+
+include 'domain'
+include 'application'
+include 'infrastructure'
+
+include 'coupon-api-server'
+
+include 'integration-tests'
+include 'integration-tests:datasource-test'
+include 'integration-tests:concurrency-test'
