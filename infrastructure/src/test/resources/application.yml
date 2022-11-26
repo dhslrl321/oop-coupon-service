@@ -3,9 +3,9 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3307/daangn-jangwonik
+    url: jdbc:mysql://localhost:3307/coupon-jangwonik
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: daangn-jangwonik
+    username: coupon-jangwonik
     password: jangwonik
   jpa:
     hibernate:

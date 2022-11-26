@@ -1,4 +1,4 @@
-rootProject.name = 'daangn-pay-2022-winter-internship'
+rootProject.name = 'oop-coupon-service'
 
 include 'domain'
 include 'application'

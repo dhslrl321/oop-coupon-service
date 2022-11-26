@@ -4,7 +4,7 @@
 
 PROFILE ?= local
 LOCAL_DB_PORT ?= 3307
-LOCAL_DB_NAME ?= daangn-jangwonik
+LOCAL_DB_NAME ?= coupon-jangwonik
 LOCAL_DB_PASSWORD ?= jangwonik
 LOCAL_DB_USER := $(LOCAL_DB_NAME)
 LOCAL_DB_CONTAINER := local-$(LOCAL_DB_NAME)
