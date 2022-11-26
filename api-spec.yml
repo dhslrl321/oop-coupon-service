@@ -1,13 +1,13 @@
 openapi: 3.0.3
 info:
-  description: this is daangn-pay-coupon's oas
-  title: 당근 페이 쿠폰 - OpenAPI 3.0
+  description: this is coupon's oas
+  title: 선착순 쿠폰 - OpenAPI 3.0
   version: 0.1.0
 servers:
   - url: /
 tags:
   - description: coupon
-    name: 당근 페이
+    name: 쿠폰
 paths:
   /api/users/{userId}/coupons:
     get:

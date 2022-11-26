@@ -1,20 +1,16 @@
 
-# 당근 페이 윈터 테크 인턴십 과제 - 장원익
+# 객체지향과 도메인에 집중한 선착순 쿠폰 발급 서비스
 
 ### gradle module dependency diagram
 
 ![image](https://user-images.githubusercontent.com/48385288/203355330-aeddfdcf-3d7e-47f8-a281-3fdd2e7cd5f4.png)
 
-- **공통 결과물**
-  - [공통 결과물 1. 문제 해결 전략](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki)
-  - [공통 결과물 2. API Specification](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/API-Specification)
-  - [공통 결과물 3. Entity Relation Diagram, ERD](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/Coupon-ERD)
 - **appendix**
-  - [Module Dependency Diagram](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/gradle-module-dependency-diagram)
-  - [Coupon Domain Modeling](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/Coupon-Domain-Modeling)
-  - [Coupon Domain State Diagram](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/Coupon-Domain-State-Diagram)
-  - [Coupon application UseCase Diagram](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/Coupon-UseCase-Diagram)
-  - [Intellij DSM](https://github.com/karrotrecruit/karrotpay-369-69326049003-75135204003/wiki/Intellij-DSM)
+  - [API Specification](https://github.com/dhslrl321/oop-coupon-service/wiki/API-Specification)
+  - [core domain modeling](https://github.com/dhslrl321/oop-coupon-service/wiki/domain-modeling)
+  - [domain state diagram](https://github.com/dhslrl321/oop-coupon-service/wiki/domain-state-diagram)
+  - [application UseCase Diagram](https://github.com/dhslrl321/oop-coupon-service/wiki/usecase-diagram)
+  - [Intellij DSM](https://github.com/dhslrl321/oop-coupon-service/wiki/Intellij-DSM-(dependency-structure-Matrix))
 
 # 프로젝트 실행 방법
 
