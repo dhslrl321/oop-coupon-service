@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import com.github.dhslrl321.coupon.core.Coupon;
 import com.github.dhslrl321.coupon.value.CouponCode;
 import com.github.dhslrl321.coupon.value.CouponId;
-import com.github.dhslrl321.coupon.core.CouponRepository;
+import com.github.dhslrl321.coupon.repository.CouponRepository;
 import com.github.dhslrl321.coupon.core.CouponState;
 import com.github.dhslrl321.coupon.core.CouponStock;
 import com.github.dhslrl321.coupon.value.CouponStockId;

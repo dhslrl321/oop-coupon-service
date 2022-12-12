@@ -4,7 +4,7 @@ import com.github.dhslrl321.coupon.application.CouponApplier;
 import com.github.dhslrl321.coupon.application.CouponDispenser;
 import com.github.dhslrl321.coupon.application.SimpleWalletManager;
 import com.github.dhslrl321.coupon.application.WalletManager;
-import com.github.dhslrl321.coupon.core.CouponRepository;
+import com.github.dhslrl321.coupon.repository.CouponRepository;
 import com.github.dhslrl321.coupon.repository.CouponStockRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
