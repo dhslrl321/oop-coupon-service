@@ -6,6 +6,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.github.dhslrl321.coupon.exception.AlreadyAssignedException;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.UserId;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -4,6 +4,8 @@ import static com.github.dhslrl321.coupon.core.FakeCoupons.assignedCoupon;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import org.junit.jupiter.api.BeforeEach;

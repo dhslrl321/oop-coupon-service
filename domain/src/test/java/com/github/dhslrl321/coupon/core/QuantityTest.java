@@ -2,8 +2,8 @@ package com.github.dhslrl321.coupon.core;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
+import com.github.dhslrl321.coupon.value.Quantity;
 import org.junit.jupiter.api.Test;
 
 class QuantityTest {

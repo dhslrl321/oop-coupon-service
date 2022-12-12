@@ -1,10 +1,15 @@
 package com.github.dhslrl321.coupon.core;
 
-import static com.github.dhslrl321.coupon.core.Quantity.ZERO;
+import static com.github.dhslrl321.coupon.value.Quantity.ZERO;
 import static org.valid4j.Validation.validate;
 
 import com.github.dhslrl321.coupon.exception.CouponSoldOutException;
 import com.github.dhslrl321.coupon.util.TimeBasedUniqueIdGenerator;
+import com.github.dhslrl321.coupon.value.Amount;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponName;
+import com.github.dhslrl321.coupon.value.CouponStockId;
+import com.github.dhslrl321.coupon.value.Quantity;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

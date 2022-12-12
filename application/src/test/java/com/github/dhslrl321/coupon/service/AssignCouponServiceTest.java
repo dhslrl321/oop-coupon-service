@@ -7,9 +7,9 @@ import static org.mockito.Mockito.mock;
 
 import com.github.dhslrl321.coupon.application.CouponDispenser;
 import com.github.dhslrl321.coupon.command.AssignCouponCommand;
-import com.github.dhslrl321.coupon.core.CouponCode;
-import com.github.dhslrl321.coupon.core.CouponId;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import com.github.dhslrl321.coupon.model.command.CommandFactory;
 import com.github.dhslrl321.coupon.model.data.AssignCouponRequestData;
 import com.github.dhslrl321.coupon.model.data.CouponAssignedResultData;

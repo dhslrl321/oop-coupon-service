@@ -2,11 +2,11 @@ package com.github.dhslrl321.coupon.service.query;
 
 import com.github.dhslrl321.coupon.application.WalletManager;
 import com.github.dhslrl321.coupon.core.Coupon;
-import com.github.dhslrl321.coupon.core.CouponId;
+import com.github.dhslrl321.coupon.value.CouponId;
 import com.github.dhslrl321.coupon.core.CouponRepository;
 import com.github.dhslrl321.coupon.core.CouponStock;
-import com.github.dhslrl321.coupon.core.CouponStockRepository;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.repository.CouponStockRepository;
+import com.github.dhslrl321.coupon.value.UserId;
 import com.github.dhslrl321.coupon.model.data.CouponDetailData;
 import com.github.dhslrl321.coupon.model.data.CouponDetailWithUserData;
 import com.github.dhslrl321.coupon.model.data.CouponDetailsData;

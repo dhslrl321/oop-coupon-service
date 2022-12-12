@@ -1,8 +1,8 @@
 package com.github.dhslrl321.coupon.application;
 
 import com.github.dhslrl321.coupon.core.Coupon;
-import com.github.dhslrl321.coupon.core.CouponId;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import java.util.List;
 
 public interface WalletManager {

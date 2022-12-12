@@ -1,9 +1,9 @@
 package com.github.dhslrl321.coupon.adapter;
 
 import com.github.dhslrl321.coupon.core.Coupon;
-import com.github.dhslrl321.coupon.core.CouponId;
+import com.github.dhslrl321.coupon.value.CouponId;
 import com.github.dhslrl321.coupon.core.CouponRepository;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.value.UserId;
 import com.github.dhslrl321.coupon.entity.SpringDataJpaCoupon;
 import com.github.dhslrl321.coupon.repository.SpringDataJpaCouponRepository;
 import java.util.List;

@@ -1,5 +1,7 @@
 package com.github.dhslrl321.coupon.core;
 
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import java.util.List;
 
 public interface CouponRepository {

@@ -7,7 +7,7 @@ import com.github.dhslrl321.coupon.application.CouponDispenser;
 import com.github.dhslrl321.coupon.application.SimpleWalletManager;
 import com.github.dhslrl321.coupon.application.WalletManager;
 import com.github.dhslrl321.coupon.core.CouponRepository;
-import com.github.dhslrl321.coupon.core.CouponStockRepository;
+import com.github.dhslrl321.coupon.repository.CouponStockRepository;
 import com.github.dhslrl321.coupon.model.command.CommandFactory;
 import com.github.dhslrl321.coupon.repository.SpringDataJpaCouponRepository;
 import com.github.dhslrl321.coupon.repository.SpringDataJpaCouponStockRepository;

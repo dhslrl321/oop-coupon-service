@@ -1,10 +1,10 @@
 package com.github.dhslrl321.coupon.entity;
 
 import com.github.dhslrl321.coupon.core.Coupon;
-import com.github.dhslrl321.coupon.core.CouponCode;
-import com.github.dhslrl321.coupon.core.CouponId;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponId;
 import com.github.dhslrl321.coupon.core.CouponState;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.value.UserId;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.Id;

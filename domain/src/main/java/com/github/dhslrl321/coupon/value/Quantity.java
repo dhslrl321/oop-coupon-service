@@ -1,4 +1,4 @@
-package com.github.dhslrl321.coupon.core;
+package com.github.dhslrl321.coupon.value;
 
 import static org.valid4j.Validation.validate;
 

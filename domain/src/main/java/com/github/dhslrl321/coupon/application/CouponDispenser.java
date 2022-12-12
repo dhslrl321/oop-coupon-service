@@ -5,7 +5,7 @@ import static org.valid4j.Validation.validate;
 import com.github.dhslrl321.coupon.command.AssignCouponCommand;
 import com.github.dhslrl321.coupon.core.Coupon;
 import com.github.dhslrl321.coupon.core.CouponStock;
-import com.github.dhslrl321.coupon.core.CouponStockRepository;
+import com.github.dhslrl321.coupon.repository.CouponStockRepository;
 import com.github.dhslrl321.coupon.exception.InvalidCommandException;
 import com.github.dhslrl321.coupon.result.CouponAssignedResult;
 import java.util.Objects;

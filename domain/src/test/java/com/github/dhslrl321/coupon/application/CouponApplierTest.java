@@ -6,9 +6,9 @@ import static org.mockito.BDDMockito.given;
 
 import com.github.dhslrl321.coupon.command.UseCouponCommand;
 import com.github.dhslrl321.coupon.core.Coupon;
-import com.github.dhslrl321.coupon.core.CouponCode;
-import com.github.dhslrl321.coupon.core.CouponId;
-import com.github.dhslrl321.coupon.core.UserId;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import com.github.dhslrl321.coupon.core.Wallet;
 import com.github.dhslrl321.coupon.exception.InvalidCommandException;
 import com.github.dhslrl321.coupon.result.CouponAppliedResult;

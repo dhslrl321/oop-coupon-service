@@ -3,7 +3,7 @@ package com.github.dhslrl321.coupon;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.github.dhslrl321.coupon.core.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponCode;
 import com.github.dhslrl321.coupon.entity.SpringDataJpaCouponStock;
 import com.github.dhslrl321.coupon.exception.CouponSoldOutException;
 import com.github.dhslrl321.coupon.model.data.AssignCouponRequestData;

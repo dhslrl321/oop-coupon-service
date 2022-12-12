@@ -1,7 +1,7 @@
 package com.github.dhslrl321.coupon.result;
 
-import com.github.dhslrl321.coupon.core.CouponCode;
-import com.github.dhslrl321.coupon.core.CouponId;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponId;
 import java.time.LocalDateTime;
 import lombok.Value;
 

@@ -1,11 +1,11 @@
 package com.github.dhslrl321.coupon;
 
-import com.github.dhslrl321.coupon.core.Amount;
-import com.github.dhslrl321.coupon.core.CouponCode;
-import com.github.dhslrl321.coupon.core.CouponName;
+import com.github.dhslrl321.coupon.value.Amount;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponName;
 import com.github.dhslrl321.coupon.core.CouponStock;
-import com.github.dhslrl321.coupon.core.CouponStockId;
-import com.github.dhslrl321.coupon.core.Quantity;
+import com.github.dhslrl321.coupon.value.CouponStockId;
+import com.github.dhslrl321.coupon.value.Quantity;
 
 public class CouponStocks {
     public static CouponStock couponStock(CouponStockId id) {

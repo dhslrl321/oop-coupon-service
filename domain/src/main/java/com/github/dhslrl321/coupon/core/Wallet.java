@@ -4,6 +4,8 @@ import static com.github.dhslrl321.coupon.core.CouponState.ASSIGNED;
 import static org.valid4j.Validation.validate;
 
 import com.github.dhslrl321.coupon.exception.DuplicateCouponAddException;
+import com.github.dhslrl321.coupon.value.CouponId;
+import com.github.dhslrl321.coupon.value.UserId;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;

@@ -4,6 +4,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.github.dhslrl321.coupon.exception.CouponSoldOutException;
+import com.github.dhslrl321.coupon.value.Amount;
+import com.github.dhslrl321.coupon.value.CouponCode;
+import com.github.dhslrl321.coupon.value.CouponName;
+import com.github.dhslrl321.coupon.value.Quantity;
 import org.junit.jupiter.api.Test;
 
 class CouponStockTest {
